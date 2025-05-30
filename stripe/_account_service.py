@@ -1224,6 +1224,9 @@ class AccountService(StripeService):
         registration_date: NotRequired[
             "Literal['']|AccountService.CreateParamsCompanyRegistrationDate"
         ]
+        """
+        When the business was incorporated or registered.
+        """
         registration_number: NotRequired[str]
         """
         The identification number given to a company when it is registered or incorporated, if distinct from the identification number used for filing taxes. (Examples are the CIN for companies and LLP IN for partnerships in India, and the Company Registration Number in Hong Kong).

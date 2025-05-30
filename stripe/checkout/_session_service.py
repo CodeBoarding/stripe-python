@@ -134,7 +134,7 @@ class SessionService(StripeService):
         """
         line_items: NotRequired[List["SessionService.CreateParamsLineItem"]]
         """
-        A list of items the customer is purchasing. Use this parameter to pass one-time or recurring [Prices](https://stripe.com/docs/api/prices).
+        A list of items the customer is purchasing. Use this parameter to pass one-time or recurring [Prices](https://stripe.com/docs/api/prices). The parameter is required for `payment` and `subscription` mode.
 
         For `payment` mode, there is a maximum of 100 line items, however it is recommended to consolidate line items if there are more than a few dozen.
 
